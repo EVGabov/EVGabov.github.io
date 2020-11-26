@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Квадраты</title>
+    <link rel="stylesheet" href="style.css" >
+    <script type="text/javascript" src="code.js"></script>
+</head>
+<body>
+
+    <div class="main-interface">
+        <div class="header">
+            <h1> Игра: "Цветные квадраты" </h1>
+        </div>
+        <div class="left-menu">
+            <div class="time">
+                <H1> Оставшееся время </H1>
+                <div id="timeText">
+                     0 
+                </div>
+                <br>
+            </div>
+            <div class="Level">
+                <H1> Уровень </H1>
+                <div id="level">
+                     0 
+                </div>
+                <br>
+            </div>
+            <div>
+                <button type="button" class="start" onclick="startGame()"> Начать игру </button>
+            </div>
+        </div>
+
+        <div class="game-field" id="gameField"></div>
+
+    </div>
+
+</body>
+</html>
+
+

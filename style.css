@@ -1,0 +1,67 @@
+body {
+    background-color: PowderBlue;
+    margin: 0;
+}
+
+.main-interface {
+    display: grid;
+    width: auto;
+    height: auto;
+    /*grid-template-columns: 200px 600px;*/
+    grid-template-rows: 80px 600px;
+    grid-template-areas:
+            "header header "
+            "left-menu main-game";
+    border: 4px solid #343434;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    border: solid #343434;
+    border-width: 0 0 4px 0;
+    width: 100%;
+
+}
+
+.left-menu {
+    grid-area: left-menu;
+    text-align: center;
+    border: solid #343434;
+    border-width: 0 4px 0 0;
+    font-size: 1.3rem;
+}
+
+.time {
+    font-weight: bold;
+    border: solid #343434;
+    border-width: 0 0 4px 0;
+}
+
+
+.level {
+    font-weight: bold;
+    border: solid #343434;
+    border-width: 0 0 4px 0;
+}
+
+.Level {
+    font-weight: bold;
+}
+
+.game-field {
+    grid-area: main-game;
+    display: grid;
+    padding: 1px;
+}
+
+.start {
+    width: 100px;
+    height: 50px;
+    margin-top: 60px;
+}
+
+.square {
+    size: auto;
+    margin: 1px;
+}
